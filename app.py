@@ -91,8 +91,7 @@ buildwai-2026/
         st.stop()
 
     # Load CSV
-    stock_df = pd.read_csv(DATA_FILE)
-
+    stock_df = pd.read_csv("data/phc_stock_data.csv")
     # Validate that the CSV is not empty
     if stock_df.empty:
         st.error("❌ phc_stock_data.csv is empty.")
